@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background: url("https://mi.by/upload/iblock/2c5/0n5l4rh522xhq5bdekn0hrhanb5b8ftj.jpg");
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+}
+
+body h1,
+.breadcrumbs {
+  display: none;
+}
+
+.main_img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.nav_menu {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+
+.nav_title {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.nav_title div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 32%;
+}
+
+.nav_title div:hover {
+  background: linear-gradient(90deg, #B3812C 0%, #E0B949 25%, #B38938 50%, #BD8B3F 75.5%, #9F7028 100%);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.nav_title a {
+  display: block;
+  text-decoration: none;
+  user-select: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #000;
+  font-weight: 700;
+  padding: 15px 30px;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  /*border: 2px solid #fff;*/
+  border-radius: 15px;
+}
+
+.nav_title a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+body h2 {
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  text-align: center;
+  max-width: 1290px;
+  margin: 60px auto 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.paragraph {
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  max-width: 1290px;
+  margin: 0 auto 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* Автоматически заполняем на всю ширину grid-контейнера */
+  grid-template-columns: repeat(auto-fill, 315px);
+  grid-auto-rows: 430px;
+  width: 100%;
+  max-width: 1300px;
+  /* Ширина grid-контейнера */
+  justify-content: center;
+  justify-items: stretch;
+  /* Размещаем карточку по центру */
+  column-gap: 10px;
+  /* Отступ между колонками */
+  row-gap: 25px;
+  /* Отступ между рядами */
+  margin: 0 auto;
+}
+
+
+.card {
+  font-family: 'Montserrat', sans-serif;
+  width: 315px;
+  min-height: 350px;
+  background-color: #fff;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  /* Размещаем элементы в колонку */
+  border-radius: 15px;
+  transition: 0.2s;
+  position: relative;
+}
+
+/* При наведении на карточку - появляется тень */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card__top {
+  flex: 0 0 220px;
+  /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden;
+  /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Встраиваем картинку в контейнер card__image */
+  transition: 0.2s;
+}
+
+/* При наведении - увеличиваем картинку */
+.card__image:hover>img {
+  transform: scale(1.1);
+}
+
+/* Размещаем скидку на товар относительно изображения */
+.card__label {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background: #BE2D2D;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card__label_credit {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background: #BE2D2D;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Размещаем рассрочку на товар относительно изображения */
+.card__credit_plan {
+  padding: 4px 8px;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  background: #BE2D2D;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  user-select: none;
+}
+
+.card__credit_plan a {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+  user-select: none;
+}
+
+.card__top p {
+  margin: 0;
+}
+
+.card_name {
+  height: 55px;
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__prices {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0 10px 20px;
+}
+
+.card__price--discount {
+  font-weight: 700;
+  font-size: 25px;
+  border: 2px solid #BE2D2D;
+  border-radius: 12px;
+  padding: 8px;
+  color: #BE2D2D;
+}
+
+.card__price--discount::before {
+  content: '';
+  display: inline-flex;
+  background: url("https://mi.by/upload/medialibrary/bd6/hstw6gosc6qqug6mn3qcqeojvs7q4lba.png");
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.card__price--common {
+  font-weight: 700;
+  font-size: 25px;
+  color: #cacaca;
+  padding-left: 10px;
+}
+
+.card__price--credit {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  border: 2px solid #BE2D2D;
+  border-radius: 12px;
+  padding: 8px;
+  color: #BE2D2D;
+  width: 100%;
+}
+
+.card__price--credit::before {
+  content: '';
+  display: inline-flex;
+  background: url("https://mi.by/upload/medialibrary/bd6/hstw6gosc6qqug6mn3qcqeojvs7q4lba.png");
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.card__price--gift {
+  font-weight: 700;
+  font-size: 22px;
+  border: 2px solid #BE2D2D;
+  border-radius: 12px;
+  padding: 8px;
+  color: #BE2D2D;
+}
+
+.card__price--gift::before {
+  content: '';
+  display: inline-flex;
+  background: url("https://mi.by/upload/medialibrary/bd6/hstw6gosc6qqug6mn3qcqeojvs7q4lba.png");
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.card__price--watch {
+  font-weight: 700;
+  font-size: 16px;
+  color: #898989;
+  padding-left: 10px;
+  width: 48%;
+}
+
+.card__title {
+  display: block;
+  text-decoration: none;
+  user-select: none;
+  margin: 0 10px 10px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 150%;
+  color: #424242 !important;
+}
+
+.card__title:hover {
+  color: #BE2D2D !important;
+}
+
+.card__add {
+  display: block;
+  width: auto;
+  max-width: 315px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  background-color: #00363F;
+  /*border: 2px solid #FF6700;*/
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin: auto 10px 5px;
+}
+
+.card__add a {
+  text-decoration: none;
+  user-select: none;
+  display: flex;
+  color: #fff;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__add:hover {
+  background: linear-gradient(90deg, #B3812C 0%, #E0B949 25%, #B38938 50%, #BD8B3F 75.5%, #9F7028 100%);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.card__add a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 1300px) {
+  .container {
+    padding: 5px;
+  }
+
+  .cards {
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 975px) {
+ 
+  body h2 {
+    font-size: 36px;
+    max-width: 965px;
+  }
+  .nav_title {
+    width: 965px;
+    font-size: 18px;
+  }
+
+  .nav_title a {
+    padding: 15px 10px;
+  }
+
+}
+
+@media screen and (max-width: 974px) and (min-width: 680px) {
+  body h2 {
+    font-size: 34px;
+    max-width: 640px;
+  }
+
+  .nav_title {
+    width: 640px;
+    font-size: 18px;
+    justify-content: center;
+  }
+  
+  .nav_title div {
+    width: 60%;
+    margin: 5px 0;
+  }
+
+  .nav_title a {
+    padding: 15px 10px;
+  }
+
+}
+
+@media screen and (max-width: 680px) and (min-width: 660px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  body h2 {
+    font-size: 34px;
+    max-width: 620px;
+    margin: 45px auto 15px;
+  }
+
+  .nav_title {
+    width: 620px;
+    font-size: 18px;
+    justify-content: center;
+  }
+    
+  .nav_title div {
+    width: 60%;
+    margin: 5px 0;
+  }
+    
+  .nav_title a {
+    padding: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 659px) and (min-width: 451px) {
+  body h2 {
+    font-size: 34px;
+    max-width: 410px;
+    margin: 30px auto 10px;
+  }
+
+  .nav_title {
+    width: 410px;
+    font-size: 18px;
+    justify-content: center;
+  }
+  
+  .nav_title div {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .nav_title a {
+    padding: 15px 10px;
+  }
+}
+
+
+@media screen and (max-width: 680px) and (min-width: 451px) {
+ 
+  .container {
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .card__price--discount {
+    font-size: 16px;
+  }
+
+  .card__price--credit,
+  .card__price--gift {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .card__price--credit::before,
+  .card__price--gift::before {
+    width: 14px;
+    height: 14px;
+  }
+
+  .card__price--discount::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .card__price--common {
+    font-size: 16px;
+  }
+
+  .card__price--watch {
+    font-size: 10px;
+    color: #404040;
+    width: 37%;
+  }
+
+  .card__label {
+    font-size: 14px;
+    left: 15px;
+  }
+
+  .card__label_credit {
+    font-size: 14px;
+    left: 15px;
+    right: 15px;
+  }
+
+  .card__title {
+    font-size: 14px;
+  }
+
+  .card__bottom {
+    padding: 10px 5px;
+  }
+
+  .img_background_1,
+  .img_background_2,
+  .img_background_3,
+  .img_background_4 {
+      background-size: contain;
+    }
+
+  .img_background_5,
+  .img_background_6 {
+      background: none;
+    }
+  
+  .nav_menu {
+    margin-bottom: 10px;
+  }
+  
+  .card__credit_plan {
+    left: 5px;
+  }
+
+}
+
+
+@media screen and (max-width: 450px) and (min-width: 390px) {
+  body h2 {
+    font-size: 30px;
+    max-width: 345px;
+    margin: 30px auto 10px;
+  }
+
+  .cards {
+    column-gap: 5px;
+    row-gap: 15px;
+  }
+
+  .card {
+    width: 170px;
+  }
+
+  .card__price--discount {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .card__price--gift::before,
+  .card__price--credit::before {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .card__price--gift,
+  .card__price--credit {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .card__price--discount::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .card__price--watch {
+    font-size: 10px;
+    color: #404040;
+    padding-left: 5px;
+    width: 37%;
+  }
+  .card__price--common {
+    font-size: 14px;
+  }
+
+  .card__bottom {
+    padding: 5px;
+  }
+
+  .card__title {
+    font-size: 13px;
+    margin: 0 10px 5px;
+  }
+
+  .card__label {
+    font-size: 14px;
+    left: 15px;
+  }
+  
+  .card__label_credit {
+    font-size: 14px;
+    left: 15px;
+    right: 15px;
+  }
+
+  .card__add {
+    font-size: 13px;
+  }
+
+  .card__add a {
+    height: 26px;
+  }
+
+  .img_background_1, 
+  .img_background_2, 
+  .img_background_3, 
+  .img_background_4 {
+    background-size: contain;
+  }
+
+  .img_background_5,
+  .img_background_6 {
+    background: none;
+  }
+
+  .nav_menu {
+    margin-bottom: 10px;
+  }
+
+  .nav_title {
+    width: 345px;
+    font-size: 16px;
+    justify-content: center;
+  }
+  
+  .nav_title div {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .nav_title a {
+    padding: 15px 10px;
+  }
+  
+  .card__credit_plan {
+    left: 5px;
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 389px) {
+  body h2 {
+    font-size: 40px;
+    max-width: 315px;
+    margin: 30px auto 10px;
+  }
+  
+  .nav_menu {
+    margin-bottom: 10px;
+  }
+    
+  .nav_title {
+    width: 315px;
+    font-size: 16px;
+    justify-content: center;
+  }
+  
+  .nav_title div {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .nav_title a {
+    padding: 15px 10px;
+  }
+    
+}
+
+.mi_color {
+  color: #ff6700;
+}
+
+.xmas_color {
+  color: #BE2D2D;
+}
