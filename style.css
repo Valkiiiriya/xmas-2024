@@ -136,6 +136,30 @@ body h2 {
   position: relative;
 }
 
+.img_background_1 {
+  background-image: url("https://mi.by/upload/medialibrary/01b/fx5p10oe3jktc2olz3iy6xsuhiz6owma.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.img_background_2 {
+  background-image: url("https://mi.by/upload/medialibrary/45a/t762b0ja5p3e75jli2zu1vii3o3pq1qk.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.img_background_3 {
+  background-image: url("https://mi.by/upload/medialibrary/c78/zgod6qtuws6ybkryffmfi93id7be2jkx.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.img_background_4 {
+  background-image: url("https://mi.by/upload/medialibrary/18e/fuwfrp2x317tf604gzgm1xyea3gxwnh1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /* При наведении на карточку - появляется тень */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.18);
