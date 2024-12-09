@@ -89,6 +89,8 @@ body h2 {
   margin: 60px auto 20px;
   color: #fff;
   font-weight: 500;
+  /*background-color:rgba(0, 73, 73, 0.7);
+  background-clip: content-box;*/
 }
 
 .paragraph {
@@ -97,9 +99,10 @@ body h2 {
   font-size: 20px;
   text-align: left;
   max-width: 1290px;
-  margin: 0 auto 10px;
+  margin: 0 auto;
   color: #fff;
   font-weight: 500;
+  background-color: rgba(0, 73, 73, 0.7);
 }
 
 .cards {
@@ -167,7 +170,7 @@ body h2 {
 }
 
 .img_background_6 {
-  background-image: url("https://mi.by/upload/medialibrary/7e6/lmec4ehgf3ie99ascezm0p8oeyo5b2an.png");
+  background-image: url("https://mi.by/upload/medialibrary/cbf/t4fchllqzpqc2apn9odruzhbyc0uygdw.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -434,7 +437,7 @@ body h2 {
 
 @media screen and (max-width: 974px) and (min-width: 680px) {
   body h2 {
-    font-size: 34px;
+    font-size: 30px;
     max-width: 640px;
   }
 
@@ -485,7 +488,7 @@ body h2 {
 
 @media screen and (max-width: 659px) and (min-width: 451px) {
   body h2 {
-    font-size: 34px;
+    font-size: 28px;
     max-width: 410px;
     margin: 30px auto 10px;
   }
@@ -593,7 +596,7 @@ body h2 {
 
 @media screen and (max-width: 450px) and (min-width: 390px) {
   body h2 {
-    font-size: 30px;
+    font-size: 26px;
     max-width: 345px;
     margin: 30px auto 10px;
   }
@@ -707,7 +710,7 @@ body h2 {
 
 @media screen and (max-width: 389px) {
   body h2 {
-    font-size: 40px;
+    font-size: 24px;
     max-width: 315px;
     margin: 30px auto 10px;
   }
