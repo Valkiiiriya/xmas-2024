@@ -160,6 +160,18 @@ body h2 {
   background-position: center center;
 }
 
+.img_background_5 {
+  background-image: url("https://mi.by/upload/medialibrary/63c/qbfpxogvuty10ft6z6f5actxtwv9c90u.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.img_background_6 {
+  background-image: url("https://mi.by/upload/medialibrary/7e6/lmec4ehgf3ie99ascezm0p8oeyo5b2an.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /* При наведении на карточку - появляется тень */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.18);
