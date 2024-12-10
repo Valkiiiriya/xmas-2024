@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  background: url("https://mi.by/upload/iblock/a56/8xnmxfs4er5uq9y4rnf6jmf4jh93gs32.webp");
+  background: url("https://mi.by/upload/iblock/1f9/mmqjkmqrt2cec1gf2zkumznqo6yvxe1r.webp");
   background-size: 100% auto;
   background-repeat: repeat;
 }
@@ -87,7 +87,7 @@ body h2 {
   text-align: center;
   max-width: 1290px;
   margin: 60px auto 20px;
-  color: #fff;
+  color: #000;
   font-weight: 500;
 }
 
@@ -98,8 +98,8 @@ body h2 {
   text-align: left;
   max-width: 1290px;
   margin: 0 auto;
-  color: #fff;
-  font-weight: 500;
+  color: #000;
+  font-weight: 600;
 }
 
 .cards {
@@ -137,37 +137,13 @@ body h2 {
 }
 
 .img_background_1 {
-  background-image: url("https://mi.by/upload/medialibrary/01b/fx5p10oe3jktc2olz3iy6xsuhiz6owma.png");
+  background-image: url("https://mi.by/upload/medialibrary/fb8/vxfwxbevsd4c72ls5g7fknfz711qt6mq.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .img_background_2 {
-  background-image: url("https://mi.by/upload/medialibrary/45a/t762b0ja5p3e75jli2zu1vii3o3pq1qk.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.img_background_3 {
-  background-image: url("https://mi.by/upload/medialibrary/c78/zgod6qtuws6ybkryffmfi93id7be2jkx.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.img_background_4 {
-  background-image: url("https://mi.by/upload/medialibrary/18e/fuwfrp2x317tf604gzgm1xyea3gxwnh1.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.img_background_5 {
-  background-image: url("https://mi.by/upload/medialibrary/63c/qbfpxogvuty10ft6z6f5actxtwv9c90u.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.img_background_6 {
-  background-image: url("https://mi.by/upload/medialibrary/cbf/t4fchllqzpqc2apn9odruzhbyc0uygdw.png");
+  background-image: url("https://mi.by/upload/medialibrary/35a/plgtr36n1bt680odaxpl4qg65t6ggtmc.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -739,4 +715,8 @@ body h2 {
 
 .xmas_color {
   color: #E0B949;
+}
+
+.xmas_color_red {
+  color: #BE2D2D;
 }
