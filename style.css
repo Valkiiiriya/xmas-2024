@@ -47,7 +47,7 @@ body h1,
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #00363F;
   overflow: hidden;
   border-radius: 15px;
   width: 32%;
@@ -65,7 +65,7 @@ body h1,
   user-select: none;
   box-sizing: border-box;
   cursor: pointer;
-  color: #000;
+  color: #fff;
   font-weight: 700;
   padding: 15px 30px;
   transition: 0.3s;
